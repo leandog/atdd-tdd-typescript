@@ -1,0 +1,33 @@
+<table id="puppy-<%= adoption.puppy.name.parameterize %>">
+<tr>
+  <td><%= image_tag(adoption.puppy.image_url, :width => '30') %></td>
+  <td><h2><%= adoption.puppy.name %>:</h2></td>
+  <td><h2><%= adoption.puppy.gender %> - <%= adoption.puppy.breed %></h2></td>
+  <td class="item_price"><h2><%= number_to_currency(adoption.total_price) %></h2></td>
+</tr>
+<tr>
+  <td colspan="2"></td>
+  <td><h3>Additional Products/Services</h3></td>
+</tr>
+<tr>
+  <td colspan="2"></td>
+  <td><%= check_box_tag 'collar'%> Collar & Leash ($19.99)</td>
+  <td><div class="collar-amount"></div></td>
+</tr>
+<tr>
+  <td colspan="2"></td>
+  <td><%= check_box_tag 'toy'%> Chew Toy ($8.99)</td>
+  <td><div class="toy-amount"></div></td>
+</tr>
+<tr>
+  <td colspan="2"></td>
+  <td><%= check_box_tag 'carrier'%> Travel Carrier ($39.99)</td>
+  <td><div class="carrier-amount"></div></td>
+</tr>
+<tr>
+  <td colspan="2"></td>
+  <td><%= check_box_tag 'vet'%> First Vet Visit ($69.99)</td>
+  <td><div class="vet-amount"></div></td>
+</tr>
+</table>
+

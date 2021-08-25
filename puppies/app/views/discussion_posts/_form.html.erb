@@ -1,0 +1,26 @@
+<%= form_for(@discussion_post, remote: request.xhr?, html: { data: { modal: true } }) do |f| %>
+  <% if @discussion_post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@discussion_post.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+      <ul>
+      <% @discussion_post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nickname %>
+    <%= f.text_field :nickname, placeholder: 'nickname - optional', size: '50' %>
+    <%= f.hidden_field :parent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :body, 'Message' %>
+    <%= f.text_area :body, placeholder: 'message',cols: '50', rows: '10'  %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Post', class: 'rounded_button' %>
+  </div>
+<% end %>

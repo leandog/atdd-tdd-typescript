@@ -1,0 +1,14 @@
+<div class="modal fade" id="mainModal" tabindex="-1" role="dialog" aria-labelledby="mainModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mainModalLabel">
+          <%= yield :title if content_for? :title %>&nbsp;
+        </h4>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+
+      <%= yield %>
+    </div>
+  </div>
+</div>

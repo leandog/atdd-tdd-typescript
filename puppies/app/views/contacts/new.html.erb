@@ -1,0 +1,41 @@
+<%= javascript_include_tag 'application' %>
+
+<% if notice -%>
+  <p id='notice'><%= notice %></p>
+<% end %>
+
+<h1>Contact</h1>
+
+<p>We value your opinion and are always ready to answer your questions about our service. Please use the form below to contact us.</p>
+
+<%= form_for @message, url: contact_path do |f| %>
+  <% if @message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@message.errors.count, "error") %> prohibited this contact message from being sent:</h2>
+
+      <ul>
+      <% @message.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name, placeholder: 'name', size: '50' %>
+  </div>
+  <div class="field">
+      <%= f.label :email %>
+      <%= f.email_field :email, placeholder: 'email', size: '50' %>
+  </div>
+  <div class="field">
+      <%= f.label :body, 'Message' %>
+      <%= f.text_area :body, placeholder: 'body',cols: '50', rows: '10' %>
+  </div>
+
+  <div class="actions">
+      <%= f.submit 'Send', class: 'rounded_button' %>
+  </div>
+<% end %>
+

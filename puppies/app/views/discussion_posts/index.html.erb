@@ -1,0 +1,17 @@
+<h1>Message Boards</h1>
+
+<div>&nbsp;</div>
+
+<p><%= link_to 'Post a Message', new_discussion_post_path, class: 'rounded_button',  data: { modal: true } %></p>
+
+<div>&nbsp;</div>
+
+<%= sorted_nested_li(@discussion_posts, :lft) do |discussion_post| %>
+    <%= render partial: 'discussion_post', locals: { discussion_post: discussion_post} %>
+<% end %>
+
+<% if @discussion_posts.length > 0 %>
+<div>&nbsp;</div>
+
+<p><%= link_to 'Post a Message', new_discussion_post_path, class: 'rounded_button',  data: { modal: true } %></p>
+<% end %>

@@ -1,0 +1,292 @@
+/* Global styles */
+
+#notice {
+  font-size: large;
+}
+
+.puppy_list {
+  margin: 2px;
+
+  div {
+    float: left;
+    margin: 5px 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  img {
+    width: 80px;
+  }
+
+  .image {
+    margin: 10px;
+    width: 100px;
+  }
+
+  .name {
+    margin: 10px;
+    width: 120px;
+  }
+
+  .details {
+    margin: 10px;
+    width: 220px;
+  }
+
+  .view {
+    margin: 10px;
+    float: right;
+  }
+
+  .list_actions {
+    font-size:    x-small;
+    text-align:   right;
+    padding-left: 1em;
+  }
+
+  .list_line_even {
+    width: 650px;
+    background: #ffcc99;
+    color: #0e5c8d;
+  }
+
+  .list_line_even a {
+    color: #0e5c8d;
+  }
+
+  .list_line_odd {
+    width: 650px;
+    background: #584340;
+    color: #b1d68a;
+  }
+
+  .list_line_odd a {
+    color: #b1d68a;
+  }
+}
+
+#banner {
+  background: #b1d68a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #0e5c8d;
+  text-align: center;
+}
+
+#banner img {
+    float: left;
+}
+
+#menu {
+  background: #0e5c8d;
+  color: #b1d68a;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  a {
+    color: #b1d68a;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+#columns {
+  background: #b1d68a;
+}
+
+#main {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4ex;
+  background: white;
+  align: center;
+}
+
+#agency {
+  #notice {
+    color: #0e5c8b;
+    border: 2px solid #0e5c8b;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #b1d68a;
+    font: bold smaller sans-serif;
+  }
+
+  h1 {
+    font:  150% sans-serif;
+    color: #0e5c8d;
+    border-bottom: 3px dotted #0e5c8d;
+  }
+
+  .entry {
+    overflow: auto;
+    margin-top: 1em;
+    border-bottom: 1px dotted #0e5c8d;
+  }
+
+  .title {
+    font-size: 120%;
+    font-family: sans-serif;
+  }
+
+  .entry img {
+    width: 80px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+  }
+
+  .entry h2 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: #0e5c8d;
+  }
+
+  .entry h3 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: #0e5c8d;
+  }
+
+  .entry p {
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+  }
+
+  .entry .fees_line {
+    margin-bottom: 0.5em;
+  }
+
+  .entry .adopt {
+    position: relative;
+  }
+
+  .entry .fees {
+    color: #0e5c8d;
+    font-weight: bold;
+    margin-right: 2em;
+  }
+  .entry form, .entry form div {
+    display: inline;
+  }
+
+  .cart_title {
+    font: 120% bold;
+  }
+
+  .item_price, .total_line {
+    text-align: right;
+  }
+
+  .total_line .total_cell {
+    font-weight: bold;
+    border-top: 1px solid;
+  }
+}
+
+.puppy_form {
+
+  fieldset {
+    background: #fc9;
+    margin-top: 10px;
+  }
+
+  legend {
+    color: #eee;
+    background: #443833;
+    font-family: sans-serif;
+    padding: 0.2em 1em;
+  }
+
+  label {
+    width: 5em;
+    float: left;
+    text-align: right;
+    padding-top: 0.2em;
+    margin-right: 0.1em;
+    display: block;
+  }
+
+  select, textarea, input {
+    margin-left: 0.5em;
+    color: #eee;
+  }
+
+  .actions {
+    margin-left: 4em;
+  }
+
+  div {
+    margin: 0.5em 0;
+  }
+}
+
+#new_order input.text, #new_order input[type=text], #new_order input[type=email], #new_order textarea {
+  width: 280px;
+}
+
+.cart_buttons {
+  form {
+    float: left;
+  }
+  .rounded_button {
+    margin-right: 10px;
+  }
+}
+
+.rounded_button {
+  padding: 9px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  color: #eee;
+  background-color: #877065;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: #443833;
+    border-color: #000;
+  }
+}
+
+.pagination {
+  width: 98%;
+  background-color: #877065;
+  color: #aaa;
+
+  a, em, .next_page {
+    margin-left: 20px;
+  }
+
+  a {
+    color: #eee;
+  }
+}
+
+.message-content {
+
+  .timestamp {
+    font-size: 0.8em;
+    font-style: italic;
+    border-bottom:1px solid #CCC;
+    margin-bottom: 6px;
+  }
+
+  .reply {
+    width: 80px;
+    height: 30px;
+    float: right;
+    text-align: right;
+    margin-right: 3px;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-block">
+        <div class="message-content">
+            <div>
+                <div class="timestamp">Posted on: <%= discussion_post.created_at.strftime('%b %d, %Y at %I:%M:%S %p') %></div>
+                <%= discussion_post.body %>
+                <% if discussion_post.nickname.length > 0 %>
+                    <br/><br/> - <%= discussion_post.nickname %>
+                <% end %>
+            </div>
+        <div class="reply"><%= link_to 'Reply', { action: 'new' , parent: discussion_post.id }, class: 'rounded_button', data: { modal: true } %></div>
+        </div>
+    </div>
+</div>
+<br>

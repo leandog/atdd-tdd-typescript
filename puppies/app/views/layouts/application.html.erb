@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+ ____________________________________________________________
+|                                                            |
+|    DESIGN : Jeremie Tisseau { http://web-kreation.com }    |
+|      DATE : 2007.08.31                                     |
+| COPYRIGHT : Free use if this notice is left in place       |
+|     EMAIL : webmaster@web-kreation.com                     |
+|____________________________________________________________|
+-->
+
+<head>
+  <title>Sally's Puppy Adoption Agency</title>
+  <%= stylesheet_link_tag "application", :media => 'all' %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <div id="sidebar">
+                <div id="sb_top">
+                   <div class="sb_logo">
+                       <a href="<%= agency_path %>" title="Home"><%= image_tag("logo.png", :alt => "Home") %></a>
+                    </div>
+                    <p>Home of the Happy Puppy</p>
+                </div>
+
+                <div class="sb_content">
+
+                  <ul id="navlist">
+                    <li><%= link_to "Adopt a Puppy", agency_path, name: "Adopt a Puppy".parameterize %></li>
+                    <li><%= link_to "My Litter", cart_path(current_cart), name: "My Litter".parameterize %></li>
+                    <li><%= link_to "Learn", learning_path, name: "Learn".parameterize %></li>
+                    <li><%= link_to "Animal Shelters", shelters_path, name: "Animal Shelters".parameterize %></li>
+                    <li><%= link_to "Classifieds", classifieds_path, name: "Classifieds".parameterize %></li>
+                    <li><%= link_to "Message Boards", discussion_posts_path, name: "Message Boards".parameterize %></li>
+                    <li><%= link_to "Pet News", news_index_path, name: "Pet News".parameterize %></li>
+
+                    <% if session[:user_id] -%>
+                      <li><%= link_to "Adoptions", orders_path %></li>
+                      <li><%= link_to "Puppies", puppies_path %></li>
+                      <li><%= link_to "Users", users_path %></li>
+                      <li><%= link_to 'Logout', login_path, :method => :delete %></li>
+                    <% end -%>
+                  </ul>
+
+               </div> <!-- /sb_content -->
+            </div> <!-- /sidebar -->
+
+
+            <!-- Top -->
+            <div id="header">
+                   <input name="search" class="search" type="text" value="Search..." />
+                   <a href="<%= new_contact_path %>" name="contact"><%= image_tag("contact.jpg", :alt => "Contact") %></a>
+            </div>
+
+
+            <!-- Start main content -->
+            <div id="content">
+                <div id="intro">
+                    <div class="intro_t">
+                      <h1><span>Home of the </span>Happy Puppy</h1>
+                    </div>
+                </div> <!-- /intro -->
+                <%= yield %>
+            </div> <!-- /content -->
+        </div> <!-- /wrapper -->
+        <div class="clear">&nbsp;</div> <!-- Important! Fix the problem of height in Firefox -->
+    </div> <!-- /Container -->
+    <div id="modal_holder"></div>
+</body>
+</html>
