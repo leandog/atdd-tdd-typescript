@@ -7,7 +7,7 @@ Once you download (clone) the project you will need to ensure you have all of th
 
     bundle
 
-in the puppies directlry. After this command completes you can start the application by executing:
+After this command completes you can start the application by executing:
 
     rails s
 
