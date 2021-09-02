@@ -74,4 +74,4 @@ Participants will become familiar with:
 
 ---
 
-![](assets/dev3l-solutions-logo-lean-dog.png)
+![](/assets/dev3l-solutions-logo-lean-dog.png)

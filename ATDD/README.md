@@ -16,4 +16,4 @@
 
 ---
 
-![](assets/dev3l-solutions-logo-lean-dog.png)
+![](/assets/dev3l-solutions-logo-lean-dog.png)
