@@ -1,7 +1,7 @@
 import { browser } from 'protractor';
 import { SearchPageObject } from '../pages/searchPage';
 
-import { Given, When, Then } from 'cucumber';
+import { Given, When } from 'cucumber';
 
 const chai = require('chai').use(require('chai-as-promised'));
 

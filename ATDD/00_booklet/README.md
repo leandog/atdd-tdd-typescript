@@ -1,6 +1,6 @@
-# ATDD-TDD-TypeScript: ATDD - 01 Hello World
+# ATDD-TDD-TypeScript: ATDD - 00 Hello World TypeScript
 
-'Hello, World!' to demostrate protractor cucumber tests in TypeScript.
+'Hello, World!' to demostrate TypeScript language features.
 
 # Prerequisites
 
@@ -9,28 +9,15 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [VS Code](https://code.visualstudio.com/)
   - [LiveShare](https://code.visualstudio.com/learn/collaboration/live-share)
-- **Chrome** browser installed
 
 # Setup
 
-#### In one termal start and run webdriver
+#### In the termal build and run TypeScript file
 
 ```bash
 ~ yarn install
-~ yarn webdriver-update
-~ yarn webdriver-start
-```
-
-#### In a second termal build and watch
-
-```bash
-~ yarn build-watch
-```
-
-#### In a third termal run test
-
-```bash
-~ yarn test
+~ tsc hello_world.ts
+~ node hello_world.js
 ```
 
 # VSCode Runtime Configuration
