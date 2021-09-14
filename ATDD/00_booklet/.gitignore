@@ -1,5 +1,7 @@
 TypeScript/
 reports/
+out/
+
 package-lock.json
 .vscode
 

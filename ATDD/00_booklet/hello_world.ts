@@ -26,6 +26,7 @@ let c: Color = Color.Green
 */
 
 /* Declarations */
+
 let isDone: boolean;
 var isReady: boolean = false;
 function add(a: number, b: number): number {
@@ -38,11 +39,15 @@ function subtract(a: number, b: number) {
 }
 
 /* Variable Assignment */
+
 // Mutable
 var x: number = 0;
 
 // Imutable
 let z = 0;
+
+// String Interpolation
+let interpolatedValue = `z is ${z}`;
 
 /* Function Calls */
 
@@ -141,6 +146,7 @@ class PointInitialization {
 let initializedPoint = new PointInitialization(1, 2);
 
 /*  Generics */
+
 class Greeter<T> {
   greeting: T;
   constructor(message: T) {
@@ -149,10 +155,10 @@ class Greeter<T> {
 }
 
 let greeter = new Greeter<string>('Hello ATDD/TDD, world!');
-
-console.log(greeter.greeting);
+greeter.greeting;
 
 /* Conditionals (if) */
+
 let value = 0;
 let message = '';
 
@@ -163,3 +169,64 @@ if (value == 5) {
 } else {
   message = 'FAILURE';
 }
+
+/* Arrays */
+
+let fruits: string[] = ['Apple', 'Orange', 'Strawberry'];
+
+fruits.push('Banana');
+fruits.unshift('Mango');
+
+let mango = fruits[0];
+let banana = fruits[fruits.length - 1];
+
+let vegetables = new Array<string>();
+
+let multiArray: (number | string)[] = [1, 'Apple'];
+
+// Functional - filter, map, reduce
+
+let sum = ['1', '2', '3', 'NaN'] // sum = 6
+  .filter((stringNumber) => {
+    return !Number.isNaN(Number(stringNumber));
+  })
+  .map((stringNumber) => {
+    return Number(stringNumber);
+  })
+  .reduce((sum, number) => {
+    return sum + number;
+  });
+
+/* Iteration */
+
+for (var i = 0; i < 10; i++) {}
+
+var whileIndex = 10;
+while (whileIndex > 0) {
+  whileIndex--;
+}
+
+let cards = ['ace', 'jack', 'queen'];
+for (let card in cards) {
+}
+
+cards.forEach((card) => {});
+
+/* Equality */
+
+// Strict
+
+'hello' === 'hello'; // true
+
+// Loose
+
+5 == 5; // true
+
+/* Dictionaries / Objects */
+
+let dictionaryObject = { key: 3, value: 5, weight: 'lb' };
+dictionaryObject['key'];
+dictionaryObject.value;
+dictionaryObject.weight = 'kg';
+
+console.log(greeter.greeting);
