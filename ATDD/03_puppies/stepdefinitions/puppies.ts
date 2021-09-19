@@ -1,15 +1,20 @@
-import { Given, When } from 'cucumber';
-import { PuppiesPageObject } from '../pages/puppiesPage';
+import { Given, When, Then } from 'cucumber';
+import { PuppiesPage } from '../pages/puppiesPage';
 
 Given(/^I am on the home page$/, async () => {
-  await new PuppiesPageObject().goto();
+  await new PuppiesPage().goto();
 });
 
 When(/^I click on the puppy "(.*?)"$/, async (puppyName) => {
-  let puppiesPage = new PuppiesPageObject();
+  let puppiesPage = new PuppiesPage();
 
   let puppy = await puppiesPage.getPuppyFromRow(puppyName);
   let viewDetails = await puppiesPage.viewDetails(puppy);
 
-  viewDetails.click();
+  await viewDetails.click();
+});
+
+Then(/^I return to the home page$/, async () => {
+  let puppiesPage = new PuppiesPage();
+  await puppiesPage.loaded();
 });

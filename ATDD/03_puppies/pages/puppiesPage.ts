@@ -1,21 +1,24 @@
 import { browser, by, element, ElementArrayFinder, ElementFinder } from 'protractor';
+import { PageObject } from './page';
 
 const chai = require('chai').use(require('chai-as-promised'));
 const expect = chai.expect;
 
-export class PuppiesPageObject {
-  private page: string = 'http://localhost:3000';
-  private title = "Sally's Puppy Adoption Agency";
+export class PuppiesPage extends PageObject {
+  private page: string = 'http://localhost:3000/';
+  private appTitle = "Sally's Puppy Adoption Agency";
 
   private puppyList: ElementArrayFinder;
 
   constructor() {
+    super('Puppy List');
+
     this.puppyList = element.all(by.className('puppy_list'));
   }
 
   public async goto() {
     await browser.get(this.page);
-    await expect(browser.getTitle()).to.eventually.equal(this.title);
+    await expect(browser.getTitle()).to.eventually.equal(this.appTitle);
   }
 
   public async getPuppyFromRow(name: string): Promise<ElementFinder> {
