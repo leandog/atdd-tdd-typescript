@@ -1,4 +1,4 @@
-Feature: View a puppy
+Feature: Adopt a puppy
 
     @Scenario
     Scenario: View the details of a puppy
@@ -14,8 +14,14 @@ Feature: View a puppy
         Then I return to the home page
 
     @Scenario
-    Scenario: Add the puppy to adopt later
+    Scenario: Add the puppy to my litter
         Given I am on the home page
         When I click on the puppy "Brook"
         And I click on "Adopt Me!"
-        # Then I see the puppy "Brook" is in my litter
+        Then I see the puppy "Brook" is in my litter
+
+    @Scenario
+    Scenario: Change my mind about adopting a puppy
+        Given I have added the puppy "Brook" to my litter
+        When I click on "Change Your Mind" in litter
+        Then I return to the home page

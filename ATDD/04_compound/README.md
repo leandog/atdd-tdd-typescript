@@ -1,6 +1,6 @@
-# ATDD-TDD-TypeScript: ATDD - 03 Puppies
+# ATDD-TDD-TypeScript: ATDD - 04 Compound
 
-End to end with Puppies site
+Compound scenarioes with Puppies site
 
 # Prerequisites
 

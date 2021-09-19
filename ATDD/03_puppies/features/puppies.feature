@@ -18,4 +18,4 @@ Feature: View a puppy
         Given I am on the home page
         When I click on the puppy "Brook"
         And I click on "Adopt Me!"
-        # Then I see the puppy "Brook" is in my litter
+        Then I see the puppy "Brook" is in my litter
