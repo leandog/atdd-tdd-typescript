@@ -1,6 +1,6 @@
-# ATDD-TDD-TypeScript: ATDD - 07 Data Table
+# ATDD-TDD-TypeScript: ATDD - 08 Outline
 
-Data Table scenarioes with Puppies site
+Senario Outlines with Puppies site
 
 # Prerequisites
 
