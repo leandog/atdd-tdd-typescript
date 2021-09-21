@@ -19,6 +19,9 @@ ADD . /app
 RUN rails db:migrate
 RUN rails db:seed
 
+# ensure db migration
+ENTRYPOINT ["bin/migrate.sh"]
+
 # start the rails server
 # NOTE: The '-b 0.0.0.0' is very important!
 # Especially if you are using a Mac.

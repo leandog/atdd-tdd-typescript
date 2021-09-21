@@ -1,7 +1,10 @@
-web:
-    build: .
-    container_name: rails-puppies
-    ports:
-    - "3000:3000"
-    volumes:
-    - .:/app
+version: "1"
+
+services:
+    web:
+        build: .
+        container_name: rails-puppies
+        ports:
+            - "3000:3000"
+        volumes:
+            - .:/app
