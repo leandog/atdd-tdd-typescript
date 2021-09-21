@@ -125,7 +125,7 @@ let point = new Point(3, 4);
 // Inheritance
 class PointArea extends Point {
   area(): number {
-    return x * y;
+    return this.x * this.y;
   }
 }
 
@@ -135,7 +135,7 @@ interface Colored {
 
 class Pixel extends Point implements Colored {
   paint() {
-    console.log(`painting ${x} to ${y}`);
+    console.log(`painting ${this.x} to ${this.y}`);
   }
 }
 

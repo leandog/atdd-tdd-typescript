@@ -25,3 +25,21 @@ Feature: Adopt a puppy
         Given I have added the puppy "Brook" to my litter
         When I click on "Change Your Mind" in litter
         Then I return to the home page
+
+    @Ignore
+    Scenario: Add another puppy to my litter
+        Given I have added the puppy "Brook" to my litter
+        When I click on "Adopt Another Puppy" in litter
+        And I click on the puppy "Ruby Sue"
+        And I click on "Adopt Me!"
+        Then I see the puppy "Ruby Sue" is in my litter
+
+    @Ignore
+    Scenario: Change my mind removes all puppies from my litter
+        Given I have added the puppy "Brook" to my litter
+        And I click on "Adopt Another Puppy"
+        And I click on the puppy "Ruby Sue"
+        And I click on "Adopt Me!"
+        When I click on "Change Your Mind" in litter
+        Then I return to the home page
+        And I see "Your cart is currently empty"

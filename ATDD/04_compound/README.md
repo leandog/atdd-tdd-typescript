@@ -1,4 +1,4 @@
-# ATDD-TDD-TypeScript: ATDD - 04 Compound
+# ATDD-TDD-TypeScript: ATDD - 05 Compound
 
 Compound scenarioes with Puppies site
 
