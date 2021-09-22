@@ -1,10 +1,10 @@
+# TODO Implement Background
 Feature: Contact Us
-  Background: View Contact Us form
-    Given I am on the home page
-    When I click on the email icon
 
   @Scenario
   Scenario: Submit a message
+    Given I am on the home page
+    When I click on the email icon
     And I fill the form in with the following values
       | contact_message_name  | Sad Puppy                                          |
       | contact_message_email | puppy@puppy.com                                    |

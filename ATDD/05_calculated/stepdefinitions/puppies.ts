@@ -9,9 +9,7 @@ When(/^I click on the puppy "(.*?)"$/, async (puppyName) => {
   let puppiesPage = new PuppiesPage();
 
   let puppy = await puppiesPage.getPuppyFromRow(puppyName);
-  let viewDetails = await puppiesPage.viewDetails(puppy);
-
-  await viewDetails.click();
+  await puppiesPage.select(puppy);
 });
 
 Then(/^I return to the home page$/, async () => {

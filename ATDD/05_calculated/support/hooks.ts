@@ -1,9 +1,12 @@
-import { BeforeAll, After, AfterAll, Status } from 'cucumber';
+import { BeforeAll, After, AfterAll, Status, setDefaultTimeout } from 'cucumber';
 
 import { browser } from 'protractor';
 import { config } from '../config/config';
 
 BeforeAll({ timeout: 100 * 1000 }, async () => {
+  // fix local browser startup timeout, not ideal for production
+  setDefaultTimeout(60000);
+
   await browser.get(config.baseUrl);
 });
 

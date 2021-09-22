@@ -38,6 +38,11 @@ export class PageObject {
     await input.sendKeys(text);
   }
 
+  public async includesText(value: string) {
+    let pageText = await this.text();
+    expect(pageText.includes(value)).to.be.true;
+  }
+
   public async clickButton(value: string) {
     let submitButtons = await this.submitButtons;
     for (let index in submitButtons) {

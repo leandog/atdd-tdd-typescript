@@ -7,7 +7,7 @@ export const config: Config = {
 
   SELENIUM_PROMISE_MANAGER: false,
 
-  baseUrl: 'https://www.google.com',
+  baseUrl: 'http://localhost:3000',
 
   capabilities: {
     browserName: 'chrome',

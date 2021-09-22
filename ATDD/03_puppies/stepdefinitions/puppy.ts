@@ -14,4 +14,6 @@ Then(/^I see "(.*?)"$/, async (text) => {
 
 When(/^I click on "(.*?)"$/, async (text) => {
   // TODO: Implement
+  let puppyPage = new PuppyPage();
+  await puppyPage.clickButton(text);
 });

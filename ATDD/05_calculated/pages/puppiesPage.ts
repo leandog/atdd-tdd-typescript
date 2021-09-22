@@ -38,7 +38,8 @@ export class PuppiesPage extends PageObject {
     return puppy;
   }
 
-  public async viewDetails(puppy: ElementFinder): Promise<ElementFinder> {
-    return puppy.element(by.className('rounded_button'));
+  public async select(puppy: ElementFinder): Promise<ElementFinder> {
+    let viewDetailsButton = await puppy.element(by.className('rounded_button'));
+    await viewDetailsButton.click();
   }
 }
