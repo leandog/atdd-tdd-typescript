@@ -5,19 +5,13 @@ const chai = require('chai').use(require('chai-as-promised'));
 const expect = chai.expect;
 
 When(/^the order form is completely filled in$/, async () => {
-  let orderPage = new OrderPage();
-  await orderPage.loaded();
-  await orderPage.fillInOrderForm();
+  // TODO: Implement
 });
 
 When(/^I blank out (.*)$/, async (fieldId) => {
-  let orderPage = new OrderPage();
-  await orderPage.clear(fieldId);
+  // TODO: Implement
 });
 
 Then(/^I see (.*) in errors$/, async (message) => {
-  let orderPage = new OrderPage();
-  let text = await orderPage.text();
-
-  expect(text.includes(message)).to.be.true;
+  // TODO: Implement
 });
