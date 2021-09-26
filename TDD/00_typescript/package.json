@@ -6,7 +6,7 @@
   "homepage": "https://github.com/leandog/atdd-tdd-typescript",
   "scripts": {
     "build": "tsc hello_world.ts",
-    "start": "node hello_world.js"
+    "start": "node dist/hello_world.js"
   },
   "devDependencies": {
     "@types/node": "^10.17.60",

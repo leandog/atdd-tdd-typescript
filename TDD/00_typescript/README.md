@@ -17,7 +17,7 @@
 ```bash
 ~ yarn install
 ~ tsc hello_world.ts
-~ node hello_world.js
+~ node dist/hello_world.js
 ```
 
 # VSCode Runtime Configuration
@@ -37,6 +37,21 @@
     }
   ]
 }
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/hello_world.ts",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "runtimeExecutable": "/Users/dev3l/.nvm/versions/node/v14.15.3/bin/node"
+    }
+  ]
+}
+
 ```
 
 ---
