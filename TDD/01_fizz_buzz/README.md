@@ -25,12 +25,11 @@ Write a program that returns a list of number strings from 1 to n, where n is th
 
 # Setup
 
-#### In the termal build and run TypeScript file
+#### In the termal
 
 ```bash
 ~ yarn install
-~ tsc hello_world.ts
-~ node hello_world.js
+~ yarn test
 ```
 
 # VSCode Runtime Configuration
