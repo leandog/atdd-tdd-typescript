@@ -14,6 +14,8 @@ Fizz Buzz in TypeScript.
 
 [Fizz Buzz: Coding Dojo](http://codingdojo.org/kata/FizzBuzz)
 
+## Problem Description
+
 Write a program that returns a list of number strings from 1 to n, where n is the upper bound.
 
 - For multiples of three print “Fizz” instead of the number

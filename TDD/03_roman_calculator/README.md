@@ -1,4 +1,4 @@
-# ATDD-TDD-TypeScript: TDD - 01 Fizz Buzz
+# ATDD-TDD-TypeScript: TDD - 03 Roman Calculator
 
 Roman Calculator in TypeScript.
 
@@ -14,7 +14,7 @@ Roman Calculator in TypeScript.
 
 [Kata Roman Calculator: Coding Dojo](https://codingdojo.org/kata/RomanCalculator/)
 
-### Problem Description
+## Problem Description
 
 “As a Roman Bookkeeper I want to add Roman numbers because doing it manually is too tedious.” Given the Roman numerals, (IVXLCDM which means one, five, ten, fifty, hundred, fivehundred and a thousand respectively), create two numbers and add them. As we are in Rome there is no such thing as decimals or int, we need to do this with the strings. An example would be “XIV” + “LX” = “LXXIV”
 
@@ -31,12 +31,11 @@ String grouping and concatenation is key to solving this kata. But, remember the
 
 # Setup
 
-#### In the termal build and run TypeScript file
+#### In the termal
 
 ```bash
 ~ yarn install
-~ tsc hello_world.ts
-~ node hello_world.js
+~ yarn test
 ```
 
 # VSCode Runtime Configuration
