@@ -23,7 +23,7 @@ Write a program that returns a list of number strings from 1 to n, where n is th
 - For numbers which are multiples of both three and five print “FizzBuzz“.
 
 **Upper bound**: 15 <br/>
-**Example output**: [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
+**Example output**: [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 'Pop', 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 'Pop', 'FizzBuzz']
 
 # Setup
 
@@ -32,6 +32,12 @@ Write a program that returns a list of number strings from 1 to n, where n is th
 ```bash
 ~ yarn install
 ~ yarn test
+```
+
+## Coverage report
+
+```bash
+yarn test:coverage
 ```
 
 # VSCode Runtime Configuration
