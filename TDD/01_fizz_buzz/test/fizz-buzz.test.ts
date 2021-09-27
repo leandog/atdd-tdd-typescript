@@ -13,7 +13,7 @@ PROBLEM REQUIREMENTS:
 - For the multiples of five print “Buzz”. 
 - For numbers which are multiples of both three and five print “FizzBuzz“.
 **Upper bound**: 15
-**Example output**: ['1', '2', 'Fizz', '4', 'Buzz', '6', '7', '8', '9', '10', '11', '12', '13', '14', 'FizzBuzz']
+**Example output**: [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
 */
 
 describe('Test Fizz Buzz', () => {
