@@ -30,24 +30,10 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Protractor Features",
-      "program": "${workspaceFolder}/node_modules/protractor/bin/protractor",
-      "args": ["${workspaceFolder}/typeScript/config/config.js"],
-      "runtimeExecutable": "$NODE"
-    }
-  ]
-}
-
-{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node",
-      "request": "launch",
       "name": "Launch Program",
       "program": "${workspaceFolder}/hello_world.ts",
       "outFiles": ["${workspaceFolder}/dist/**/*.js"],
-      "runtimeExecutable": "/Users/dev3l/.nvm/versions/node/v14.15.3/bin/node"
+      "runtimeExecutable": "$NODE"
     }
   ]
 }

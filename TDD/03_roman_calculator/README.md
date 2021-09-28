@@ -48,7 +48,7 @@ String grouping and concatenation is key to solving this kata. But, remember the
       "request": "launch",
       "name": "Jest Tests",
       "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-      "args": ["-i"],
+      "args": ["--no-watchman"],
       "console": "integratedTerminal",
       "outFiles": ["${workspaceRoot}/dist/**/*"],
       "envFile": "${workspaceRoot}/.env"

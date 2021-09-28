@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "../07_fizz_buzz_functional/dist",
+    "sourceMap": true
+  }
+}

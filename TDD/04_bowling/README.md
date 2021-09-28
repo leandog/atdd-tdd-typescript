@@ -67,7 +67,7 @@ _(When scoring “X” indicates a strike, “/” indicates a spare, “-” in
       "request": "launch",
       "name": "Jest Tests",
       "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-      "args": ["-i"],
+      "args": ["--no-watchman"],
       "console": "integratedTerminal",
       "outFiles": ["${workspaceRoot}/dist/**/*"],
       "envFile": "${workspaceRoot}/.env"
