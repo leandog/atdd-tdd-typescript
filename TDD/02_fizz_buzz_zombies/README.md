@@ -28,7 +28,7 @@ Write a program that returns a list of numbers and strings from 1 to n, where n 
 
 # Setup
 
-#### In the termal
+## In the termal
 
 ```bash
 ~ yarn install

@@ -50,11 +50,17 @@ _(When scoring “X” indicates a strike, “/” indicates a spare, “-” in
 
 # Setup
 
-#### In the termal
+## In the termal
 
 ```bash
 ~ yarn install
 ~ yarn test
+```
+
+## Coverage report
+
+```bash
+yarn test:coverage
 ```
 
 # VSCode Runtime Configuration

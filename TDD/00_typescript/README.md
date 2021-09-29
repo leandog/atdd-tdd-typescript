@@ -12,7 +12,7 @@
 
 # Setup
 
-#### In the termal build and run TypeScript file
+## In the termal build and run TypeScript file
 
 ```bash
 ~ yarn install

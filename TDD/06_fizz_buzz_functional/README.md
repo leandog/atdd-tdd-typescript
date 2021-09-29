@@ -1,4 +1,4 @@
-# ATDD-TDD-TypeScript: TDD - 05 Fizz Buzz
+# ATDD-TDD-TypeScript: TDD - 06 Fizz Buzz
 
 Fizz Buzz in TypeScript.
 
@@ -34,6 +34,12 @@ Write a program that returns a list of numbers and strings from 1 to n, where n 
 ```bash
 ~ yarn install
 ~ yarn test
+```
+
+## Coverage report
+
+```bash
+yarn test:coverage
 ```
 
 # VSCode Runtime Configuration

@@ -1,18 +1,21 @@
-import { Widget, WidgetDao } from './db/widget-dao';
+import { Widget } from './db/widget-db';
+import { WidgetDao } from './db/widget-dao';
 
 export class WidgetService {
-  constructor() {}
+  // TODO: invert dependency by passing in WidgetDao in constructor
 
-  loadWidgets(): Array<Widget> {
+  loadWidgets(): Promise<Array<Widget>> {
+    // TODO: use injected WidgetDao
     let widgetDao = new WidgetDao();
     let widgets = widgetDao.loadWidgets();
 
     return widgets;
   }
 
-  loadWidgetsByName(): Array<Widget> {
+  async loadWidgetsByName(): Promise<Array<Widget>> {
+    // TODO: use injected WidgetDao
     let widgetDao = new WidgetDao();
-    let widgets = widgetDao.loadWidgets();
+    let widgets = await widgetDao.loadWidgets();
 
     return widgets.sort((w1, w2) => {
       if (w1.name < w2.name) {
@@ -23,5 +26,7 @@ export class WidgetService {
       }
       return 0;
     });
+
+    // TODO: add loadWidgetsBySize
   }
 }

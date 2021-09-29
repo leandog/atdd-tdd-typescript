@@ -31,11 +31,17 @@ String grouping and concatenation is key to solving this kata. But, remember the
 
 # Setup
 
-#### In the termal
+## In the termal
 
 ```bash
 ~ yarn install
 ~ yarn test
+```
+
+## Coverage report
+
+```bash
+yarn test:coverage
 ```
 
 # VSCode Runtime Configuration

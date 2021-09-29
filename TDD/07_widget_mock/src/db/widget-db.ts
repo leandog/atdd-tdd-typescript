@@ -3,6 +3,9 @@ export class Widget {
 }
 
 export class WidgetDb {
+  // database latency
+  private latency = 2500;
+
   private widgets = [
     new Widget(1, 'coffee cup', 5),
     new Widget(2, 'lamp', 10),
@@ -10,8 +13,12 @@ export class WidgetDb {
     new Widget(4, 'coin', 1),
   ];
 
-  queryAll(): Array<Widget> {
-    setTimeout(() => {}, 1000);
+  async queryAll(): Promise<Array<Widget>> {
+    await this.delay(this.latency * this.widgets.length);
     return this.widgets;
+  }
+
+  private delay(ms: number) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
