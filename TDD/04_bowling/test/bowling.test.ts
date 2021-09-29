@@ -90,7 +90,7 @@ describe('Test Bowling', () => {
     // let result = new Bowling().score(game);
     //
     // asssert
-    // expect(expected).toEqual(result);
+    // expect(result).toEqual(expected);
   });
 
   it('should work with no strikes or spares', () => {
@@ -102,7 +102,7 @@ describe('Test Bowling', () => {
     // let result = new Bowling().score(game);
     //
     // asssert
-    // expect(expected).toEqual(result);
+    // expect(result).toEqual(expected);
   });
 
   it('should work with all spares', () => {
@@ -114,7 +114,7 @@ describe('Test Bowling', () => {
     // let result = new Bowling().score(game);
     //
     // asssert
-    // expect(expected).toEqual(result);
+    // expect(result).toEqual(expected);
   });
 
   it('should work with all strikes', () => {
@@ -126,6 +126,6 @@ describe('Test Bowling', () => {
     // let result = new Bowling().score(game);
     //
     // asssert
-    // expect(expected).toEqual(result);
+    // expect(result).toEqual(expected);
   });
 });

@@ -67,7 +67,7 @@ describe('Test Roman Calculator', () => {
     // let result = new RomanCalculator().add('', '');
     //
     // asssert
-    // expect(expected).toEqual(result);
+    // expect(result).toEqual(expected);
   });
 
   it('should add two plus two', () => {
@@ -78,6 +78,6 @@ describe('Test Roman Calculator', () => {
     // let result = new RomanCalculator().add('II', 'II');
     //
     // asssert
-    // expect(expected).toEqual(result);
+    // expect(result).toEqual(expected);
   });
 });

@@ -8,7 +8,8 @@
   "scripts": {
     "build": "tsc",
     "build-watch": "tsc -w",
-    "test": "jest --no-watchman"
+    "test": "jest --no-watchman",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
     "@types/node": "^10.17.60",

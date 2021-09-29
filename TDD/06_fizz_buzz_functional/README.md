@@ -16,11 +16,13 @@ Fizz Buzz in TypeScript.
 
 ## Problem Description
 
-Write a program that returns a list of number strings from 1 to n, where n is the upper bound.
+Write a program that returns a list of numbers and strings from 1 to n, where n is the upper bound.
 
-- For multiples of three print “Fizz” instead of the number
-- For the multiples of five print “Buzz”
-- For numbers which are multiples of both three and five print “FizzBuzz“
+- For multiples of three set “Fizz” instead of the number
+- For the multiples of five set “Buzz”
+- For numbers which are multiples of both three and five set “FizzBuzz“
+- For the multiples of seven set “Pop”, unless it is a multiple of three or five
+- Otherwise set the ordinal number
 
 **Upper bound**: 15 <br/>
 **Example output**: [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']

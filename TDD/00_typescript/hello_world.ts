@@ -40,11 +40,16 @@ function subtract(a: number, b: number) {
 
 /* Variable Assignment */
 
-// Mutable
+// Hoisted
+x = 5;
 var x: number = 0;
 
-// Imutable
+// Function Scoped
 let z = 0;
+z = 5;
+
+// Immutable
+const q = 'hello';
 
 // String Interpolation
 let interpolatedValue = `z is ${z}`;

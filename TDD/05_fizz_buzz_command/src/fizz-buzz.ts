@@ -1,6 +1,7 @@
 export class FizzBuzz {
   public execute(upperBound: number): (number | string)[] {
-    var result = [];
+    var result: Array<number | string> = [];
+
     for (let i = 1; i <= upperBound; i++) {
       var value: number | string = '';
 

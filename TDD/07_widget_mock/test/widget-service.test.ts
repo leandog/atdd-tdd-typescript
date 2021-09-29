@@ -1,5 +1,7 @@
 // import { FizzBuzz } from '../src/fizz-buzz';
 
+import { WidgetService } from '../src/widget-service';
+
 /*
 # Three Laws of Test Driven Development
 - You are not allowed to write any production code unless it is to make a failing unit test pass.
@@ -13,11 +15,11 @@ Fake it till you make it
 
 /*
 # ZOMBIES
-Z - Zero                          
-O - One                           
+Z - Zero
+O - One
 M - Many
 B - Boundary Behavior
-I - Interface Definition          
+I - Interface Definition
 E - Exercise Exception Behavior
 S - Simple
 */
@@ -54,19 +56,13 @@ PROBLEM REQUIREMENTS:
 */
 
 describe('Test Fizz Buzz', () => {
-  it('does run Jest', () => {
-    expect(true).toBe(true); // pass
-    // expect(true).toBe(false); // fail
-  });
+  it('loads widgets', () => {
+    let expectedIds = [1, 2, 3, 4];
 
-  it('should work with zero', () => {
-    // arrange
-    // let expected = [];
-    //
-    // act
-    // let result = new FizzBuzz().execute(0);
-    //
-    // asssert
-    // expect(expected).toEqual(result);
+    let widgetService = new WidgetService();
+    let widgets = widgetService.loadWidgets();
+
+    let result = widgets.map((widget) => widget.id);
+    expect(result).toEqual(expectedIds);
   });
 });
