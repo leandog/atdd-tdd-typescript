@@ -1,6 +1,9 @@
-<h2 id="details">{{hero.name | uppercase}} Details</h2>
-<div id="id"><span>id: </span>{{hero.id}}</div>
+<!-- // TODO: Add Hero member to component -->
+
+<h2 id="details">{{selectedHero.name | uppercase}} Details</h2>
+<div id="heroId"><span>id: </span>{{selectedHero.id}}</div>
 <div>
     <label for="heroName">Hero name: </label>
-    <input id="heroName" [(ngModel)]="hero.name" placeholder="hero name">
+    <input id="heroName" [(ngModel)]="selectedHero.name"
+        placeholder="hero name">
 </div>
