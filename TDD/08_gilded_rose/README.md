@@ -1,4 +1,4 @@
-# ATDD-TDD-TypeScript: TDD - xx Gilded Rose
+# ATDD-TDD-TypeScript: TDD - 08 Gilded Rose
 
 Gilded Rose in TypeScript.
 
@@ -53,7 +53,7 @@ legendary item and as such its Quality is 80 and it never alters.
 
 # Setup
 
-#### In the termal
+## In the termal
 
 ```bash
 ~ yarn install

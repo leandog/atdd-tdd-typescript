@@ -48,6 +48,10 @@ I - It
 Boy Scout Rule - leave the code better than you found it
 */
 
+/*
+Make the Change Easy, Then Make the Easy Change
+*/
+
 describe('Test Gilded Rose', function () {
   it('should foo', function () {
     const gildedRose = new GildedRose([new Item('foo', 0, 0)]);
