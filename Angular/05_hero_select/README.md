@@ -1,4 +1,4 @@
-# ATDD-TDD-TypeScript: Angular - 02 ToH Create
+# ATDD-TDD-TypeScript: Angular - 05 ToH Hero Select
 
 TDD Angular Tour of Heroes
 

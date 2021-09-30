@@ -39,11 +39,20 @@ describe('HeroesComponent', () => {
   });
 
   it(`should have heroes '${heroName}'`, () => {
-    // TODO: Add heros to component
     expect(component.heroes).toEqual(HEROES);
+  });
 
-    // let heroes: Array<Hero> = [];
-    // expect(heroes).toEqual(HEROES);
+  it('should select hero when clicked', async () => {
+    // random hero
+    let heroes = HEROES.filter((hero) => {
+      return hero.id !== component.selectedHero.id;
+    });
+    let expectedHero = heroes.sort(() => 0.5 - Math.random())[0];
+
+    // TODO: Implement onSelect
+    // component.onSelect(expectedHero);
+
+    expect(component.selectedHero).toEqual(expectedHero);
   });
 
   it('should render hero', () => {
@@ -69,5 +78,15 @@ describe('HeroesComponent', () => {
     heroNameInput.dispatchEvent(new Event('input'));
 
     expect(component.selectedHero.name).toBe(expectedName);
+  });
+
+  it('should have one selected hero', () => {
+    for (let hero of HEROES) {
+      let expected = component.selectedHero.id === hero.id;
+      let heroRowId = `#row_${hero.id}`;
+
+      let heroNameInput = htmlElement.querySelector(heroRowId);
+      expect(heroNameInput?.parentElement?.classList.contains('selected')).toBe(expected);
+    }
   });
 });
